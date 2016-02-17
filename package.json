@@ -1,0 +1,50 @@
+{
+  "name": "quicktips",
+  "displayName": "QuickTips",
+  "description": "Display quick tips within VS Code.",
+  "version": "0.1.0",
+  "publisher": "bbenoist",
+  "engines": {
+    "vscode": "^0.10.6"
+  },
+  "categories": [
+    "Other"
+  ],
+  "icon": "images/icon.png",
+  "license": "MIT",
+  "bugs": { "url": "https://github.com/bbenoist/vscode-quicktips/issues" },
+  "homepage": "https://github.com/bbenoist/vscode-quicktips/blob/master/README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bbenoist/vscode-quicktips.git"
+  },
+  "galleryBanner": {
+    "color": "#FFBA1C",
+    "theme": "light"
+  },
+  "activationEvents": [
+    "onCommand:extension.quickTips"
+  ],
+  "main": "./out/src/extension",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.quickTips",
+        "title": "QuickTips: Display a useful tip about VS Code and its installed extensions"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "node ./node_modules/vscode/bin/compile",
+    "compile": "node ./node_modules/vscode/bin/compile -watch -p ./",
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "node ./node_modules/vscode/bin/test"
+  },
+  "devDependencies": {
+    "typescript": "^1.7.5",
+    "vscode": "^0.11.0"
+  },
+  "dependencies": {
+    "open": "0.0.5"
+  }
+}

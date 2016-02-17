@@ -1,0 +1,28 @@
+{
+  "quickTips": [
+    { "tip": "You can quickly switch between files with Ctrl+Tab",
+      "url": "https://code.visualstudio.com/docs/customization/keybindings" }
+  , { "tip": "You can toggle the sidebar visibility with the Ctrl+Shift+B",
+      "url": "https://code.visualstudio.com/docs/customization/keybindings" }
+  , { "tip": "You can move the current line up or down with Alt+Up and Alt+Down respectively.",
+      "url": "https://code.visualstudio.com/docs/customization/keybindings" }
+  , { "tip": "Select all occurences of current selection with Ctrl+Shift+L",
+      "url": "https://code.visualstudio.com/docs/customization/keybindings" }
+  , { "tip": "Select all occurences of current word with Ctrl+F2",
+      "url": "https://code.visualstudio.com/docs/customization/keybindings" }
+  , { "tip": "You can toggle comments for current line with Ctrl+/",
+      "url": "https://code.visualstudio.com/docs/customization/keybindings" }
+  , { "tip": "Open the version-control sidebar with Ctrl+Shift+G",
+      "url": "https://code.visualstudio.com/docs/customization/keybindings" }
+  , { "tip": "Open the debug sidebar with Ctrl+Shift+D",
+      "url": "https://code.visualstudio.com/docs/customization/keybindings" }
+  , { "tip": "Open the file explorer sidebar with Ctrl+Shift+E",
+      "url": "https://code.visualstudio.com/docs/customization/keybindings" }
+  , { "tip": "Open the search sidebar with Ctrl+Shift+F",
+      "url": "https://code.visualstudio.com/docs/customization/keybindings" }
+  , { "tip": "Toggle console output visibility with Ctrl+Shift+U",
+      "url": "https://code.visualstudio.com/docs/customization/keybindings" }
+  , { "tip": "Delete the current line with Ctrl+Shift+K",
+      "url": "https://code.visualstudio.com/docs/customization/keybindings" }
+  ]
+}
