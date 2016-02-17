@@ -13,7 +13,7 @@ export function activate(context: vscode.ExtensionContext) {
   ext.addQuickTips(
     JSON.parse(
       fs.readFileSync(
-        path.join(context.extensionPath, 'src', 'resource.json')
+        path.join(context.extensionPath, 'quicktips.json')
       ).toString()
     ).quickTips
   );

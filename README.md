@@ -1,6 +1,6 @@
 # QuickTips
 
-> **We need you!** The extension stil lacks a lot of useful tips. Feel free to propose new ones on our [GitHub repository][gh-repo].
+> **We need you!** The extension stil lacks a lot of useful tips in [`quicktips.json`][quicktips-json]. Feel free to propose new ones on our [GitHub repository][gh-repo].
 
 ## Description
 
@@ -45,7 +45,7 @@ You can submit your issues and feature requests on the GitHub [issues page][issu
 
 New quick tips are welcome!
 
-Simply add your own in [`src/resource.json`][resource-json] and open a new pull request.
+Simply add your own in [`quicktips.json`][quicktips-json] and open a new pull request.
 
 See [`CONTRIBUTING.md`][contributing-md] for more detailed guidelines.
 
@@ -124,5 +124,5 @@ Icon made by Freepik from www.flaticon.com.
 [travis-ci]: https://travis-ci.org/bbenoist/vscode-quicktips
 [supported-extensions]: https://github.com/bbenoist/vscode-quicktips/wiki/Extensions-with-QuickTips-support
 [contributing-md]: https://github.com/bbenoist/vscode-quicktips/tree/master/CONTRIBUTING.md
-[resource-json]: https://github.com/bbenoist/vscode-quicktips/tree/master/src/resource.json
+[quicktips-json]: https://github.com/bbenoist/vscode-quicktips/tree/master/quicktips.json
 [vscode]: https://code.visualstudio.com/
