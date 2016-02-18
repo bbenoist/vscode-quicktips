@@ -49,8 +49,10 @@ Simply add your own in [`quicktips.json`][quicktips-json] and open a new pull re
 
 See [`CONTRIBUTING.md`][contributing-md] for more detailed guidelines.
 
-[![Build Status](https://travis-ci.org/bbenoist/vscode-quicktips.svg?branch=master)][travis-ci]
 [![Gitter](https://badges.gitter.im/bbenoist/vscode-quicktips.svg)][gitter]
+[![Build Status](https://travis-ci.org/bbenoist/vscode-quicktips.svg?branch=master)][travis-ci]
+[![Dependency Status](https://david-dm.org/bbenoist/vscode-quicktips.svg)][npm-dependencies]
+[![devDependency Status](https://david-dm.org/bbenoist/vscode-quicktips/dev-status.svg)](npm-devdependencies)
 
 ## API
 
@@ -122,6 +124,8 @@ Icon made by Freepik from www.flaticon.com.
 [issues]: https://github.com/bbenoist/vscode-quicktips/issues/
 [gitter]: https://gitter.im/bbenoist/vscode-quicktips
 [travis-ci]: https://travis-ci.org/bbenoist/vscode-quicktips
+[npm-dependencies]: https://david-dm.org/bbenoist/vscode-quicktips
+[npm-devdependencies]: https://david-dm.org/bbenoist/vscode-quicktips#info=devDependencies
 [supported-extensions]: https://github.com/bbenoist/vscode-quicktips/wiki/Extensions-with-QuickTips-support
 [contributing-md]: https://github.com/bbenoist/vscode-quicktips/tree/master/CONTRIBUTING.md
 [quicktips-json]: https://github.com/bbenoist/vscode-quicktips/tree/master/quicktips.json
