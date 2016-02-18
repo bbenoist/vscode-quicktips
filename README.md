@@ -77,6 +77,8 @@ Each item of the `quickTips` property must be an object with the following field
 
 QuickTips eats its own dogfood. Which means that you can see a working example in the [`package.json`][package-json] file of this extension.
 
+> **Note:** Be sure to list your extension in the [dedicated wiki page][supported-extensions] to make your end-users aware of your QuickTips support.
+
 Here is an alternative example baser on the Hello World VS Code extension tutorial:
 
 ```json
