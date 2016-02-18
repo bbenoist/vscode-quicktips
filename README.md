@@ -1,16 +1,18 @@
 # QuickTips
 
-> **We need you!** The extension stil lacks a lot of useful tips in [`quicktips.json`][quicktips-json]. Feel free to propose new ones on our [GitHub repository][gh-repo].
+> **We need you!** The extension stil lacks a lot of useful tips in [`package.json`][package-json]. Feel free to propose new ones on our [GitHub repository][gh-repo].
 
 ## Description
 
 QuickTips is a [VS Code][vscode] extension which **displays some useful tips and tricks in a popup**.
 
+![QuickTips example](images/example.jpg)
+
 It helps newcomers getting more productive with the editor and its extensions by occasionally learning a new tip.
 
 > **Note:** The QuickTips popup will never be automatically opened at VS Code startup ;-)
 
-QuickTips allows extensions developers to add their own tips. See the [API](#api) section if you want to add quick tips for your own VS Code Extension.
+QuickTips allows extensions developers to add their own tips in `package.json` without declaring it as a dependency. See the [API](#api) section if you want to add quick tips for your own VS Code Extension.
 
 [List of supported extensions][supported-extensions]
 
@@ -45,7 +47,7 @@ You can submit your issues and feature requests on the GitHub [issues page][issu
 
 New quick tips are welcome!
 
-Simply add your own in [`quicktips.json`][quicktips-json] and open a new pull request.
+Simply add your own in [`package.json`][package-json] and open a new pull request.
 
 See [`CONTRIBUTING.md`][contributing-md] for more detailed guidelines.
 
@@ -56,58 +58,64 @@ See [`CONTRIBUTING.md`][contributing-md] for more detailed guidelines.
 
 ## API
 
-### Example
+QuickTips can automatically load additional tips from the `package.json` file of other extensions.
 
-The following example demonstrates the addition of new quick tips from another VS Code extension. You should just have to copy and paste it to start adding your own quick tips.
+Which means that you simply have to add a `quickTips` property in it to have them included in the QuickTips command.
 
-Because we do not want to force end-users to install QuickTips if he didn't asked for it, you need to add some extra code which is also commented below.
+That's it, **no additional npm dependency** is required. End-users of your extension will not be forced to install QuickTips.
 
-Although, one of the positive effects of this policy is that you do not need to declare a additional dependency within `package.json` for your extension to support the QuickTips API.
+Each item of the `quickTips` property must be an object with the following fields:
 
-Once released, be sure to add your extension in the [dedicated wiki page][supported-extensions].
-
-```typescript
-// Find the quicktips extension.
-var qtExt = vscode.extensions.getExtension('bbenoist.quicktips');
-// Only consume the API if the extension has been installed.
-if (qtExt) {
-  // The manual activation is required to prevent the quicktips extension from
-  // being loaded when VS Code starts (see the VS Code API docs for more info).
-  qtExt.activate().then(() => {
-    // Declare the additional quick tips.
-    qtExt.exports.addQuickTips(
-      [
-        // Replace the quick tips below by your own ones.
-        {
-          tip: 'You can add your own quick tips with the quicktips public API.',
-          url: 'https://github.com/bbenoist/vscode-quicktips'
-        },
-        { tip: 'URL is optional, you are not forced to use it' }
-      ]
-    );
-  });
-}
-```
-
-### Specification
-
-The following functions are exported by the QuickTips API:
-
-```typescript
-// Add a single quick tip in the collection.
-addQuickTip(quickTips:quicktips.IQuickTip)
-
-// Add a multiple quick tips in the collection.
-addQuickTips(quickTips:quicktips.IQuickTip[])
-```
-
-`IQuickTip` can be any object with the following properties:
 ```typescript
 {
   // The message to display in the popup.
   tip:string,
   // An optional URL to open when clicking on the More Info button.
   url?:string
+}
+```
+
+QuickTips eats its own dogfood. Which means that you can see a working example in the [`package.json`][package-json] file of this extension.
+
+Here is an alternative example baser on the Hello World VS Code extension tutorial:
+
+```json
+{
+  "name": "myFirstExtension",
+  "description": "",
+  "version": "0.0.1",
+  "publisher": "",
+  "engines": {
+    "vscode": "^0.10.1"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:extension.sayHello"
+  ],
+  "main": "./out/src/extension",
+  "contributes": {
+    "commands": [{
+      "command": "extension.sayHello",
+      "title": "Hello World"
+    }]
+  },
+  "scripts": {
+    "vscode:prepublish": "node ./node_modules/vscode/bin/compile",
+    "compile": "node ./node_modules/vscode/bin/compile -watch -p ./"
+  },
+  "devDependencies": {
+    "typescript": "^1.7.5",
+    "vscode": "^0.11.x"
+  },
+  "quickTips": [
+    {
+      "tip": "You can add your own quick tips with the quicktips public API.",
+      "url": "https://github.com/bbenoist/vscode-quicktips"
+    },
+    { "tip": "URL is optional, you are not forced to use it" }
+  ]
 }
 ```
 
@@ -128,5 +136,5 @@ Icon made by Freepik from www.flaticon.com.
 [npm-devdependencies]: https://david-dm.org/bbenoist/vscode-quicktips#info=devDependencies
 [supported-extensions]: https://github.com/bbenoist/vscode-quicktips/wiki/Extensions-with-QuickTips-support
 [contributing-md]: https://github.com/bbenoist/vscode-quicktips/tree/master/CONTRIBUTING.md
-[quicktips-json]: https://github.com/bbenoist/vscode-quicktips/tree/master/quicktips.json
+[package-json]: https://github.com/bbenoist/vscode-quicktips/tree/master/package.json
 [vscode]: https://code.visualstudio.com/

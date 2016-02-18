@@ -6,21 +6,19 @@ import * as fs from 'fs';
 import * as path from 'path'
 
 export function activate(context: vscode.ExtensionContext) {
-  var ext = new quicktips.QuickTipExtension(() => {});
-  context.subscriptions.push(ext);
+  var quickTipsExt = new quicktips.QuickTipExtension(() => {});
+  context.subscriptions.push(quickTipsExt);
 
-  // Load quick tips from resource.json file to simplify its maintaining.
-  ext.addQuickTips(
-    JSON.parse(
-      fs.readFileSync(
-        path.join(context.extensionPath, 'quicktips.json')
-      ).toString()
-    ).quickTips
-  );
+  // Loop over vscode extensions to find quick tips.
+  vscode.extensions.all.forEach((ext) => {
+    if (Object.prototype.hasOwnProperty.call(ext.packageJSON, 'quickTips')) {
+      quickTipsExt.addQuickTips(ext.packageJSON.quickTips);
+    }
+  });
 
   // Expose the quickTips command to VS Code.
   let disposable = vscode.commands.registerCommand('extension.quickTips', () => {
-    ext.showRandomQuickTip();
+    quickTipsExt.showRandomQuickTip();
   });
   context.subscriptions.push(disposable);
 
@@ -28,12 +26,12 @@ export function activate(context: vscode.ExtensionContext) {
   return {
     // Add a single quick tip in the collection.
     addQuickTip(quickTip:quicktips.IQuickTip) {
-      ext.addQuickTip(quickTip);
+      quickTipsExt.addQuickTip(quickTip);
     },
 
     // Add a multiple quick tips in the collection.
     addQuickTips(quickTips:quicktips.IQuickTip[]) {
-      ext.addQuickTips(quickTips);
+      quickTipsExt.addQuickTips(quickTips);
     }
   }
 }
