@@ -78,7 +78,7 @@ QuickTips eats its own dogfood. Which means that you can see a working example i
 
 > **Note:** Be sure to list your extension in the [dedicated wiki page][supported-extensions] to make your end-users aware of your QuickTips support.
 
-Here is an alternative example baser on the Hello World VS Code extension tutorial:
+Here is an alternative example based on the Hello World VS Code extension tutorial:
 
 ```json
 {
