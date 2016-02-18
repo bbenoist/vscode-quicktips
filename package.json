@@ -48,7 +48,9 @@
     "open": "0.0.5"
   },
   "quickTips": [
-    { "tip": "You can quickly switch between files with Ctrl+Tab",
+    { "tip": "VS Code extension developer? You can add tips for your own extension",
+      "url": "https://github.com/bbenoist/vscode-quicktips/blob/master/README.md#api" }
+  , { "tip": "You can quickly switch between files with Ctrl+Tab",
       "url": "https://code.visualstudio.com/docs/customization/keybindings" }
   , { "tip": "You can toggle the sidebar visibility with the Ctrl+Shift+B",
       "url": "https://code.visualstudio.com/docs/customization/keybindings" }
@@ -102,5 +104,63 @@
       "url": "https://code.visualstudio.com/Docs/editor/codebasics#_file-encoding-support" }
   , { "tip": "Click on the encoding in the status bar to reopen or save the active file with a different encoding",
       "url": "https://code.visualstudio.com/Docs/editor/codebasics#_file-encoding-support" }
+  , { "tip": "The window.openInNewWindow setting controls if files should open in a new window instead of reusing an existing VS Code instance",
+      "url": "https://code.visualstudio.com/docs/editor/codebasics#_window-management" }
+  , { "tip": "The window.reopenFolders setting tells VS Code how to restore the opened windows of your previous session",
+      "url": "https://code.visualstudio.com/docs/editor/codebasics#_window-management" }
+  , { "tip": "You can quickly look for extension updates by using the Extensions: Show Outdated Extensions dropdown",
+      "url": "https://code.visualstudio.com/docs/editor/extension-gallery#_update-an-extension" }
+  , { "tip": "You can jump to the matching bracket with Ctrl+Shift+]",
+      "url": "https://code.visualstudio.com/docs/editor/editingevolved#_bracket-matching" }
+  , { "tip": "You can add secondary cursors with Alt+Click. Each cursor operates independently based on the context it sits in.",
+      "url": "https://code.visualstudio.com/docs/editor/editingevolved#_selection-multicursor" }
+  , { "tip": "Use Ctrl+Alt+Up to insert cursors below or above",
+      "url": "https://code.visualstudio.com/docs/editor/editingevolved#_selection-multicursor" }
+  , { "tip": "Ctrl+D selects the word at the cursor, or the next occurrence of the current selection",
+      "url": "https://code.visualstudio.com/docs/editor/editingevolved#_selection-multicursor" }
+  , { "tip": "Ctrl+K Ctrl+D moves the last added cursor to next occurrence of the current selection",
+      "url": "https://code.visualstudio.com/docs/editor/editingevolved#_selection-multicursor" }
+  , { "tip": "Quickly shrink or expand the selection with Shift+Alt+Left and Shift+Alt+Right (applies to all languages)",
+      "url": "https://code.visualstudio.com/docs/editor/editingevolved#_selection-multicursor" }
+  , { "tip": "You can always manually trigger completion with Ctrl+Space",
+      "url": "https://code.visualstudio.com/docs/editor/editingevolved#_intellisense" }
+  , { "tip": "You can type only the upper case letters of a method name to limit the suggestions. For example, `wl` will quickly bring up WriteLine.",
+      "url": "https://code.visualstudio.com/docs/editor/editingevolved#_intellisense" }
+  , { "tip": "The 24x7 IntelliSense can be configured via the editor.quickSuggestions and editor.suggestOnTriggerCharacters settings",
+      "url": "https://code.visualstudio.com/docs/editor/editingevolved#_intellisense" }
+  , { "tip": "By pressing Tab, you can expand Emmet abbreviations in HTML, Razor, CSS, Less, Sass, XML or Jade",
+      "url": "https://code.visualstudio.com/docs/editor/editingevolved#_snippets-and-emmet-abbreviations" }
+  , { "tip": "If a language supports it, you can go to the definition of a symbol by pressing F12",
+      "url": "https://code.visualstudio.com/docs/editor/editingevolved#_go-to-definition" }
+  , { "tip": "If you press Ctrl and hover over a symbol, a preview of the declaration will appear",
+      "url": "https://code.visualstudio.com/docs/editor/editingevolved#_go-to-definition" }
+  , { "tip": "You can jump to the definition with Ctrl+Click or open the definition to the side with Ctrl+Alt+Click",
+      "url": "https://code.visualstudio.com/docs/editor/editingevolved#_go-to-definition" }
+  , { "tip": "If you opened a new editor window, you can go back to the previous editor with Ctrl+Alt+Left",
+      "url": "https://code.visualstudio.com/docs/editor/editingevolved#_go-to-definition" }
+  , { "tip": "You can navigate symbols inside a file with Ctrl+Shift+O. By typing : the symbols will be grouped by category.",
+      "url": "https://code.visualstudio.com/docs/editor/editingevolved#_goto-symbol" }
+  , { "tip": "In C# and in TypeScript, you can jump to a symbol across files with Ctrl+T.",
+      "url": "https://code.visualstudio.com/docs/editor/editingevolved#_open-symbol-by-name" }
+  , { "tip": "If your folder is a Git repo, each change will make useful annotations be added to the gutter and to the overview ruler",
+      "url": "https://code.visualstudio.com/docs/editor/editingevolved#_gutter-indicators" }
+  , { "tip": "When you execute a Reference Search (via Shift+F12), or a Peek Definition (via Alt+F12), the result is embedded inline",
+      "url": "https://code.visualstudio.com/docs/editor/editingevolved#_peek" }
+  , { "tip": "You can make quick edits right and navigate between different references in the peeked editor",
+      "url": "https://code.visualstudio.com/docs/editor/editingevolved#_peek" }
+  , { "tip": "Clicking on the peeked editor filename or double-clicking in the result list will open the reference in the outer editor",
+      "url": "https://code.visualstudio.com/docs/editor/editingevolved#_peek" }
+  , { "tip": "For languages that support it, the hover will show useful information, such as types of symbols",
+      "url": "https://code.visualstudio.com/docs/editor/editingevolved#_hover" }
+  , { "tip": "With C#, directly invoke the Find References action by clicking on inline reference information",
+      "url": "https://code.visualstudio.com/docs/editor/editingevolved#_reference-information" }
+  , { "tip": "With C#, Reference information can be turned on or off through the editor.referenceInfos setting",
+      "url": "https://code.visualstudio.com/docs/editor/editingevolved#_reference-information" }
+  , { "tip": "With TypeScript and C#, you can quickly rename symbol across files with F2",
+      "url": "https://code.visualstudio.com/docs/editor/editingevolved#_rename-symbol" }
+  , { "tip": "You can click on the summary or press Ctrl+Shift+M to see a list of all current errors and warnings",
+      "url": "https://code.visualstudio.com/docs/editor/editingevolved#_errors-warnings" }
+  , { "tip": "Press F8 or Shift+F8 to loop through errors or warnings in the current file",
+      "url": "https://code.visualstudio.com/docs/editor/editingevolved#_errors-warnings" }
   ]
 }
