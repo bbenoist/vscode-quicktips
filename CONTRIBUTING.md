@@ -1,14 +1,13 @@
 # Contributing
 
-[![Gitter](https://badges.gitter.im/bbenoist/vscode-quicktips.svg)][gitter]
-[![Build Status](https://travis-ci.org/bbenoist/vscode-quicktips.svg?branch=master)][travis-ci]
-[![Dependency Status](https://david-dm.org/bbenoist/vscode-quicktips.svg)][npm-dependencies]
-[![devDependency Status](https://david-dm.org/bbenoist/vscode-quicktips/dev-status.svg)](npm-devdependencies)
+[![Gitter](https://badges.gitter.im/bbenoist/vscode-quicktips.svg)][gitter] [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)][license] [![Build Status](https://travis-ci.org/bbenoist/vscode-quicktips.svg?branch=master)][travis-ci] [![Dependency Status](https://david-dm.org/bbenoist/vscode-quicktips.svg)][npm-dependencies] [![devDependency Status](https://david-dm.org/bbenoist/vscode-quicktips/dev-status.svg)][npm-devdependencies]
+
 
 [gitter]: https://gitter.im/bbenoist/vscode-quicktips
 [travis-ci]: https://travis-ci.org/bbenoist/vscode-quicktips
 [npm-dependencies]: https://david-dm.org/bbenoist/vscode-quicktips
 [npm-devdependencies]: https://david-dm.org/bbenoist/vscode-quicktips#info=devDependencies
+[license]: https://raw.githubusercontent.com/bbenoist/vscode-quicktips/master/LICENSE
 
 As long as you respect the following rules, I accept any pull-request which can improve the extension.
 

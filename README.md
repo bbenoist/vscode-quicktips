@@ -1,5 +1,7 @@
 # QuickTips
 
+[![VS Code Marketplace](https://img.shields.io/badge/vscode-bbenoist.quicktips-blue.svg)][marketplace] [![GitHub tag](https://img.shields.io/github/tag/bbenoist/vscode-quicktips.svg)][gh-repo] [![GitHub issues](https://img.shields.io/github/issues/bbenoist/vscode-quicktips.svg)][issues] [![Gitter](https://badges.gitter.im/bbenoist/vscode-quicktips.svg)][gitter]
+
 > **We need you!** The extension stil lacks a lot of useful tips in [`package.json`][package-json]. Feel free to propose new ones on our [GitHub repository][gh-repo].
 
 ## Description
@@ -51,10 +53,7 @@ Simply add your own in [`package.json`][package-json] and open a new pull reques
 
 See [`CONTRIBUTING.md`][contributing-md] for more detailed guidelines.
 
-[![Gitter](https://badges.gitter.im/bbenoist/vscode-quicktips.svg)][gitter]
-[![Build Status](https://travis-ci.org/bbenoist/vscode-quicktips.svg?branch=master)][travis-ci]
-[![Dependency Status](https://david-dm.org/bbenoist/vscode-quicktips.svg)][npm-dependencies]
-[![devDependency Status](https://david-dm.org/bbenoist/vscode-quicktips/dev-status.svg)](npm-devdependencies)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)][license] [![Build Status](https://travis-ci.org/bbenoist/vscode-quicktips.svg?branch=master)][travis-ci] [![Dependency Status](https://david-dm.org/bbenoist/vscode-quicktips.svg)][npm-dependencies] [![devDependency Status](https://david-dm.org/bbenoist/vscode-quicktips/dev-status.svg)][npm-devdependencies]
 
 ## API
 
@@ -138,5 +137,6 @@ Icon made by Freepik from www.flaticon.com.
 [npm-devdependencies]: https://david-dm.org/bbenoist/vscode-quicktips#info=devDependencies
 [supported-extensions]: https://github.com/bbenoist/vscode-quicktips/wiki/Extensions-with-QuickTips-support
 [contributing-md]: https://github.com/bbenoist/vscode-quicktips/tree/master/CONTRIBUTING.md
+[license]: https://raw.githubusercontent.com/bbenoist/vscode-quicktips/master/LICENSE
 [package-json]: https://github.com/bbenoist/vscode-quicktips/tree/master/package.json
 [vscode]: https://code.visualstudio.com/
