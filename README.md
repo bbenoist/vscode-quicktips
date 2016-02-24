@@ -33,13 +33,23 @@ Clicking on **More Info** will open a new webpage with more detailed information
 Clicking on **New Tip** will open a new random tip.
 
 ## Installation
-### Visual Studio Code
+### With Visual Studio Code
 Hit `Ctrl+P` and enter the `ext install quicktips` command.
 
-### Installing the extension locally
-Just clone the [GitHub repository][gh-repo] under your local extensions folder:
-* Windows: `%USERPROFILE%\.vscode\extensions`
-* Mac / Linux: `$HOME/.vscode/extensions`
+### With Git
+
+> ** Note ** Prefer the previous solution unless you are aware of the consequences.
+
+In a command-line shell, `cd` into your local extensions folder:
+  * Windows: `%USERPROFILE%\.vscode\extensions`
+  * Mac / Linux: `$HOME/.vscode/extensions`
+
+Once done, enter the following commands:
+
+    git clone https://github.com/bbenoist/vscode-quicktips
+    cd vscode-quicktips
+    npm install
+    npm run compile
 
 ## Issues / Feature requests
 You can submit your issues and feature requests on the GitHub [issues page][issues].
